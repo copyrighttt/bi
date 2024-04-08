@@ -1,0 +1,22 @@
+1.	Install package Party
+Syntax: install.packages(“party”)
+
+4.	Input data
+Syntax: inputdata <- readingSkills[c(1:150),]
+
+5.	Creating Tree
+Syntax: myTree <- ctree(nativeSpeaker ~ age + shoeSize + score, inputdata)
+
+6.	Plotting Tree:
+Syntax: plot(myTree)
+
+Output:
+
+
+
+library(party)
+print(head(readingSkills))
+inputdata=readingSkills[c(1:105)]
+png(file="decisiontree.png")
+mytree=<- ctree(nativeSpeaker ~ age + shoeSize + score, inputdata)
+plot(mytree)
