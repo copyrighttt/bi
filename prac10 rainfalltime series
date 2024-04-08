@@ -1,0 +1,6 @@
+Rainfall <- c(455,123,234,856,950,1123.4,2450.9,1145,990,789,112,321)
+Rainfall.timeseries <- ts(Rainfall,start=c(2019,1),frequency = 12) 
+print(Rainfall.timeseries)
+png(file="rainfall2019.png") 
+plot(Rainfall.timeseries) 
+dev.off()
